@@ -5,7 +5,7 @@ from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 import pymongo
 
-client = pymongo.MongoClient("mongodb+srv://Drew:bellabella444@cluster0.j0suz.mongodb.net/mern?retryWrites=true&w=majority")
+client = pymongo.MongoClient("")
 for name in client.list_database_names():
     print(name)
 db = client['crypto-database']
